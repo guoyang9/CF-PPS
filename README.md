@@ -33,25 +33,25 @@ Download the Amazon dataset and put the subset in the path according to the ```d
 Perform pre-processing:
 
 ```
-    PYTHONPATH=$PYTHONPATH:./src python preprocess/process.py --dataset Office_Products 
-    ```
+PYTHONPATH=$PYTHONPATH:./src python preprocess/process.py --dataset Office_Products 
+```
 
 For QL and UQL, run an additional script to make some temp files:
 
 ```
-    PYTHONPATH=$PYTHONPATH:./src python src/QL/preprocess.py --dataset Office_Products 
-    ```
+PYTHONPATH=$PYTHONPATH:./src python src/QL/preprocess.py --dataset Office_Products 
+```
 
 For TransearchText, run the pre-trained Doc2Vec model:
 
 ```
-    PYTHONPATH=$PYTHONPATH:./src python preprocess/doc2vec.py --dataset Office_Products 
-    ```
+PYTHONPATH=$PYTHONPATH:./src python preprocess/doc2vec.py --dataset Office_Products 
+```
 
 ## Model Training and Testing
 ```
-    PYTHONPATH=$PYTHONPATH:./src python src/anymodel --dataset Office_Products
-    ```
+PYTHONPATH=$PYTHONPATH:./src python src/anymodel --dataset Office_Products
+```
 
 ## Citation
 If you want to use this code, please cite the papers below:
